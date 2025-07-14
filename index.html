@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)file:///C:/Users/sneha10/Desktop/sih/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiksha Raksha</title>
+    <script>
+      function scrollToSection1() {
+          var section = document.getElementById('about');
+          section.scrollIntoView({ behavior: 'smooth' });
+      }
+      function scrollToSection2() {
+          var section = document.getElementById('contact');
+          section.scrollIntoView({ behavior: 'smooth' });
+      }
+      function scrollToSection3() {
+        var section = document.getElementById('home');
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+  </script>
+    <link rel="shortcut icon" type="image/x-icon" href="logo18.png" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script src="./input-form.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("HgmVVKatwwN7GD7Vi");
+   })();
+</script>
+
+</head>
+
+<body>
+  <div class="scroll">
+    <button id ="scrolltop">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+
+  </div>
+  
+  <section class="header">
+    <header>
+        <img src="Images/logo-small.png" class="logo">
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><i class= "material-icons">close</i></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href=#about>ABOUT US</a></li>
+            <li><a href="analysis.html">ANALYSIS</a></li>
+            <li><a href="solution.html">OUR HELP</a></li>
+            <li><a href=#contact>CONTACT</a></li>
+        </ul>
+        <ul>
+            <li class="hidemobile"><a href="index.html">HOME</a></li>
+            <li class="hidemobile"><a href=#about>ABOUT US</a></li>
+            <li class="hidemobile"><a href="analysis.html">ANALYSIS</a></li>
+            <li class="hidemobile"><a href="solution.html">OUR HELP</a></li>
+            <li class="hidemobile"><a href=#contact>CONTACT</a></li>
+            <li onclick=showSidebar()><i class= "material-icons">menu</i></li>
+        </ul>
+    </header>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display='flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+    </script>
+</section>
+    
+    <section class="hero_section" id="home">
+      
+        <div class="content">
+            <h1>SHIKSHA RAKSHA</h1>
+            <p>"Welcome to Shiksha Raksha, a non-profit website for policy makers and educators! Here, we provide helpful information and solutions to reduce the number of dropout students. Let's work together to ensure more students get a good education!"</p>
+            <button type="button"><span></span><a href="analysis.html">ANALYSIS</a></button>
+            <button type="button"><span></span><a href="solution.html">SOLUTION</a></button>
+        </div>  
+    </section> 
+
+    <section id="about">
+        <h1>ABOUT US</h1>
+        <img src="Images/about-section.avif" class="image-about">
+        <div class="about-info">
+            <p>Shiksha Raksha is a distinguished online non-profit platform dedicated to fostering awareness throughout India regarding student dropout rates and the strategic measures to mitigate them. Our mission is to conduct comprehensive analyses of the factors contributing to student dropouts and to provide actionable solutions for their effective prevention. Shiksha Raksha serves as an invaluable resource for students, educational institutions, local communities, and the nation as a whole, with the overarching goal of significantly diminishing the incidence of student attrition from the educational system.</p>
+            <p>Our analysis focuses on addressing the issue of school dropouts in India through data-driven research. We aim to provide valuable insights to empower educational institutions, policymakers, and communities to take informed actions and improve access to quality education. Our commitment to data transparency and ethical analysis is central to our mission of reducing dropout rates and enhancing educational outcomes for all students in the country.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote">
+        <img src="Images/qoute-home.jpg" class="quote-image">
+        <div>
+            <p class="text-qoute"><i><em>This slogan emphasizes how education (Shiksha) provides support, and protection (Raksha) leads to prosperity and progress.</em></i></p> 
+        </div>
+    </section>
+    
+    <section class="core-commitment">
+        <div class="cc-content">
+            <h1>CORE COMMITMENTS</h1>
+            <p>At Shiksha Raksha, we have strong beliefs, a clear mission, and a vision. These three things work together like a compass to guide us in our mission of making education better for students everywhere.</p>
+        </div>
+
+        <div class="row-cards">
+            <div class="cc-card">
+                <img src="Images/vision.png" class="vision">
+                <h3>VISION</h3>
+                <p>"Shiksha Raksha dreams of a world where every child, no matter what's going on around them, can easily go to a good school. This helps create a future where there are lots of chances for everyone and a fairer society."</p>
+            </div>
+            <div class="cc-card">
+                <img src="Images/mission.png" class="mission">
+                <h3>MISSION</h3>
+                <p>"Shiksha Raksha imagines a world where every child, no matter of what circumstances, can get excellent education without any problems. This will make a future with lots of chances for all and a fairer society."</p>
+            </div>
+            <div class="cc-card">
+                
+                <img src="Images/values.png" class="values">
+                <h3>VALUES</h3>
+                <p>"At Shiksha Raksha, we believe in fairness, kindness, honesty, including everyone, working together, new ideas, responsibility, giving power, speaking up for others, and the community. These beliefs guide us in making sure everyone can get an education."</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="video">
+      <h1>STAY IN, STAND OUT</h1>
+      <div class="video-display">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/i2m7dY47EB8?si=FT7mnVcgrwM0zkFi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="contactText">CONTACT US</h2>
+      <p class="contactText">Contact us for any queries!</p>
+        <div class="container">
+          <div class="ContactInfo">
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div class="text">
+                <h3>Email Address:</h3>
+                <p>shiksharaksha23@gmail.com</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+              <div class="text">
+                <h3>Contact number:</h3>
+                <p>+91 1234567890</p>
+              </div>
+            </div>
+          </div>
+          <div class="ContactForm">
+            <form >
+              <h2>Send Message</h2>
+              <div class="inputbox">
+                <input id="name" type="text" name="" required="required">
+                <div class="inputText" >Full Name</div>
+              </div></h2>
+              <div class="inputbox">
+                <input id="Email" type="text" name="" required="required">
+                <div class="inputText" >Email</div>
+              </div></h2>
+              <div class="inputbox">
+                <textarea id="input" required="required"></textarea>
+                <div class="inputText" >Type your message...</div>
+              </div>
+              <div class="inputbox">
+                <button type="button" onclick="sendmail()">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    <footer>
+      <div class="footer">
+        <div class="footer-info">
+          <img src="Images/logo-large.png" class="logo-footer">
+          <p>Shiksha Raksha-A one stop destination for educational empowerment and dropout prevention</p>
+        </div>
+        <div class="footer-contact">
+          <h3 class="footermail">Email Address:</h3>
+          <p>shiksharaksha23@gmail.com</p>
+          <h3 class="footernumber">Contact Number:</h3>
+          <p>+91 1234567890</p>
+        </div>
+        <div class="footer-links">
+          <h3>Links <div class="underline"><span></span></div></h3>
+          <ul>
+            <li onclick="scrollToSection3()">Home</li>
+            <li onclick="scrollToSection1()">About us</li>
+            <li><a href="analysis.html">Analysis</a></li>
+            <li><a href="solution.html">Our help</a></li>
+            <li onclick="scrollToSection2()">Contact</li>
+          </ul>
+        </footer>
+        <script>
+          const scrolltop=document.querySelector("#scrolltop");
+          scrolltop.addEventListener("click",function(){
+            window.scrollTo({
+              top:0,
+              left:0,
+              behavior:"smooth"
+            });
+          })
+        </script>
+</body>
+</html>
+
+
+
+
+
+
